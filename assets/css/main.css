@@ -72,6 +72,10 @@ input, select, textarea {
 	appearance: none;
 }
 
+.width100percent {
+	width: 100% !important;
+}
+
 /* Basic */
 
 	@-ms-viewport {
