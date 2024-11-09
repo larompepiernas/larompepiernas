@@ -19,7 +19,6 @@
     <!-- Colors -->
     <!-- rojo #da291c -->
     <!-- turquesa #20B2AA -->
-
     <!-- Page Wrapper -->
     <div id="page-wrapper">
 
@@ -121,15 +120,23 @@
                     <h2 class="major colorRed">NOTICIAS</h2>
                     <section class="features">
                         <article>
+                            <a href="#" class="image"><img src="images/noticia-2.jpg" alt="" /></a>
+                            <h3 class="major">Abrimos Inscripciones para la 25 Edición en 2025</h3>
+                            <p>El 22.Noviembre.24 abrimos inscripciones! Si quieres ser un@ de l@s valientes...</p>
+                            <a href="abrimos-inscripciones-22-noviembre-2024" target="_blank" class="special2">Leer más</a>
+                        </article>
+                        <article>
                             <a href="#" class="image"><img src="images/noticia-1.jpg" alt="" /></a>
                             <h3 class="major">Arranca la 25 Edición en 2025</h3>
                             <p>El 23.03.25 será la 25ª edición de La Rompepiernas y ya estamos trabajando...</p>
-                            <a href="#" class="special">Leer más</a>
+                            <a href="arranca-25-aniversario-la-rompepiernas-espiel-belmez" target="_blank" class="special2">Leer más</a>
                         </article>
                     </section>
-                    <ul class="actions">
-                        <li><a href="#" class="button">Todas las noticias</a></li>
-                    </ul>
+                    <!--
+    <ul class="actions">
+        <li><a href="#" class="button">Todas las noticias</a></li>
+    </ul>
+        -->
                 </div>
             </section>
 
@@ -165,6 +172,22 @@
         <script src="assets/js/breakpoints.min.js"></script>
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
+        <script>
+            function loadvideo() {
+            
+                var mobileSrc = "videos/promo-la-rompepiernas-espiel-belmez-2024-mobile.mp4";
+                var desktopSrc = "videos/promo-la-rompepiernas-espiel-belmez-2024.mp4";
+
+                if (window.innerWidth > 630){
+                   $("#video-bg").attr("src",desktopSrc);
+                }else{
+                   $("#video-bg").attr("src",mobileSrc);
+                }
+            }
+
+            window.addEventListener("resize", loadvideo);
+            window.onload=loadvideo;
+        </script>
 
 </body>
 </html>
