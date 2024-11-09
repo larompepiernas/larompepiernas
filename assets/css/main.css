@@ -82,6 +82,12 @@ input, select, textarea {
     color: #da291c !important;
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #video-bg {
     position: fixed;
     right: 0;
