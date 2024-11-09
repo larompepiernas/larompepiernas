@@ -3116,7 +3116,7 @@ button,
 
         #header nav a {
             border: 0;
-            display: inline-block;
+            display: inline-flex;
             padding: 0 1em;
         }
 
