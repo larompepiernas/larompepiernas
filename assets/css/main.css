@@ -3625,6 +3625,11 @@ body.is-preload #banner p {
         }
 }
 
+.wrapper2 {
+    margin: 6.5em 0;
+    position: relative;
+}
+
 .wrapper {
     background-color: #2e3141;
     margin: 6.5em 0;
