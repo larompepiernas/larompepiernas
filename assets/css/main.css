@@ -157,6 +157,44 @@ body, input, select, textarea {
     }
 }
 
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+}
+
+.wrap {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 300px;
+    justify-items: stretch;
+    animation: slide 10s linear infinite;
+    animation-play-state: running;
+}
+
+    .wrap img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .wrap img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 30px rgba(255, 255, 255, 0.8), 0 4px 20px rgba(0, 0, 0, 0.4);
+            border-color: rgba(255, 255, 255, 0.8);
+        }
+
+    .wrap:hover {
+        animation-play-state: paused;
+    }
+
+@keyframes slide {
+    to {
+        translate: calc(-4 * 300px);
+    }
+}
+
 @media screen and (max-width: 1280px) {
 
     body, input, select, textarea {
